@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+<Head>
+    <link rel="stylesheet" href="./Style.css">
+    <Title>MyTunes</Title>
+</Head>
+<body>
+    <div class="MyTunes">
+        <h1>MyTunes</h1>
+        <img src="./Assets/MyTunes Background Highlight.png" alt="MyTunes background highlight">
+    </div>
+
+    <div class="music-adder">
+        <div class="flex add-title">
+        <Label>Title<span>*</span></Label>
+        <input type="text" id="add-title" placeholder="Africa">
+        </div>
+
+        <div class="flex add-artist">
+        <Label>Artist<span>*</span></Label>
+        <input type="text" id="add-artist" placeholder="Toto">
+        </div>
+
+        <div class="flex add-album">
+        <Label>Album</Label>
+        <input type="text" id="add-album" placeholder="Toto IV">
+        </div>
+
+        <div class="flex add-genre">
+        <Label>Genre</Label>
+        <input type="text" id="add-genre" placeholder="Pop">
+        </div>
+
+        <div class="flex add-year-of-release">
+        <Label>Year of Release</Label>
+        <input type="text" id="add-year-of-release" placeholder="1982">
+        </div>
+
+        <div class="add-button">
+        <button type="button" id="add-button">
+            <img src="./Assets/MyTunes Plus.png" alt="Button Plus Icon">
+            <label>Add</label>
+        </button>
+        </div>
+
+        <img class="logo" src="./Assets/MyTunes Logo.png" alt="MyTunes Logo">
+        </div>
+
+    <div class="search-bar">
+        <button type="button">
+            <img src="./Assets/MyTunes Search Icon.png" alt="Search Icon">
+        </button>
+        <input type="text" required>
+    </div>
+
+    <div class="music-list" id="music-list">
+    </div>
+
+    <script src="./JavaScript.js" defer charset="utf-8"></script>
+</body>
+</html>

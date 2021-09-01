@@ -89,18 +89,33 @@ function SetTextOfChildWithClass(classstring, content, children)
 
 window.onclick = function(event) 
 {
-    if (!(event.target.matches('.options-button') || event.target.matches('.circle-container') || event.target.matches('.options-button'))) 
+    if (!(event.target.matches('.options-button'))) 
     {
         var dropdowns = document.getElementsByClassName("drop-down");
         var i;
-        for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) 
+        for (i = 0; i < dropdowns.length; i++) 
         {
-            openDropdown.classList.remove('show');
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) 
+            {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }   
+    if(event.target.matches('.options-button'))
+    {
+        let pressedDropDown = event.target.querySelector('.drop-down')
+        var dropdowns = document.getElementsByClassName("drop-down");
+        for (i = 0; i < dropdowns.length; i++) 
+        {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show') && openDropdown != pressedDropDown) 
+            {
+                openDropdown.classList.remove('show');
+            }
         }
     }
-    }
+    
 }
 
 function openDropDown()

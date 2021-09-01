@@ -286,6 +286,7 @@ button > div {
     justify-content: space-between;
     padding: 1vw 0vw 1vw 0vw;
     height: 5vw;
+    pointer-events: none
 }
 
 .music-container button:hover, .music-container button:focus{
@@ -299,7 +300,6 @@ height: 1vw;
 border-radius: 5vw;
 background-color: var(--color);
 margin-left: 0.4vw;
-pointer-events: none
 }
 
 .drop-down{
